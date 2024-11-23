@@ -1,0 +1,9 @@
+domain: coomer.su
+selectors:
+  post:
+    images: ".post__files .post__thumbnail figure a"
+    videos: ".post__attachments .post__attachment a"
+  folder:
+    post_links: ".card-list__items .post-card a"
+    next_page: ".paginator menu a.next"
+  folder_title: ".post__user-name"
