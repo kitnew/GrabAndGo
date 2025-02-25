@@ -13,5 +13,5 @@ def run_wizard():
     print("Starting parsing with the provided inputs...")
     
     #Call the parser with wizard inputs
-    from parser import parse_urls
+    from main.parser.parser import parse_urls
     parse_urls(url, file_path, root, formats, output)
