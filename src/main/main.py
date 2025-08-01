@@ -39,12 +39,18 @@
 from parser.parser import parse_url
 import os
 
+
+from bs4 import BeautifulSoup
+import requests
+import random
+import time
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 def main():
-    url = "https://coomer.su/onlyfans/user/segodnyai"  # Пример ссылки на папку
-    media = parse_url(url, False)
-    print(media)
+    url = "https://simpcity.su/threads/nesegodnyai.418564/"  # Пример ссылки на папку
+    
+    media = parse_url(url, False, False)
 
 if __name__ == "__main__":
     main()
